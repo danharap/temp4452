@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  26 MAR 2026 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  26 MAR 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,7 +476,13 @@ Underfull \hbox (badness 4569) in paragraph at lines 68--69
 []\T1/ptm/m/n/10 Classical ap-proaches of-ten rely on hand-crafted fre-
  []
 
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 89
+.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
+
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -487,13 +493,69 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-7.
+Overfull \hbox (32.40932pt too wide) in paragraph at lines 123--124
+[]\T1/ptm/m/n/10 Training uses \T1/pcr/m/n/10 build_image_transform(is_train=tr
+ue)\T1/ptm/m/n/10 ,
+ []
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [2]
-Overfull \hbox (2.47142pt too wide) in paragraph at lines 157--165
+
+Underfull \hbox (badness 1661) in paragraph at lines 123--124
+\T1/ptm/m/n/10 in-puts us-ing mean/std \T1/pcr/m/n/10 [0.485, 0.456, 0.406] \T1
+/ptm/m/n/10 and
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[]\T1/ptm/m/n/10 Concretely, ex-per-i-ments were run by ex-e-cut-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/ptm/m/n/10 ing \T1/pcr/m/n/10 train_baseline.py\T1/ptm/m/n/10 , \T1/pcr/m/n
+/10 train_cnn.py\T1/ptm/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/pcr/m/n/10 evaluate.py\T1/ptm/m/n/10 , and \T1/pcr/m/n/10 predict.py \T1/pt
+m/m/n/10 with their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/ptm/m/n/10 YAML con-figs in \T1/pcr/m/n/10 ai_detector/configs\T1/ptm/m/n/1
+0 ; each
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 131--132
+\T1/ptm/m/n/10 com-mand cre-ates a times-tamped run di-rec-tory un-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/pcr/m/n/10 runs/ \T1/ptm/m/n/10 (via \T1/pcr/m/n/10 create_run_dir()\T1/ptm
+/m/n/10 ) and saves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/pcr/m/n/10 config_used.yaml \T1/ptm/m/n/10 along with per-condition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/ptm/m/n/10 out-puts such as \T1/pcr/m/n/10 confusion_matrix_<tag>.png\T1/pt
+m/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+\T1/ptm/m/n/10 and mis-clas-si-fi-ca-tion ex-am-ples in
+ []
+
+
+Overfull \hbox (2.47142pt too wide) in paragraph at lines 160--168
  [][] 
  []
 
@@ -503,7 +565,7 @@ File: ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png Graphi
 c file (type png)
 <use ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/confusion_mat
-rix_test.png  used on input line 173.
+rix_test.png  used on input line 176.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
 <../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=154, 433.62pt 
 x 361.35pt>
@@ -511,7 +573,7 @@ File: ../report_handoff/plots+metrics/baseline/roc_curve_test.png Graphic file
 (type png)
 <use ../report_handoff/plots+metrics/baseline/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/roc_curve_tes
-t.png  used on input line 179.
+t.png  used on input line 182.
 (pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
 <../report_handoff/plots+metrics/clean_model_comparison_table.png, id=155, 678.
 9365pt x 194.7275pt>
@@ -519,45 +581,49 @@ File: ../report_handoff/plots+metrics/clean_model_comparison_table.png Graphic
 file (type png)
 <use ../report_handoff/plots+metrics/clean_model_comparison_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/clean_model_comparison
-_table.png  used on input line 185.
+_table.png  used on input line 188.
 (pdftex.def)             Requested size: 239.39923pt x 68.66373pt.
-[3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png> <../rep
-ort_handoff/plots+metrics/baseline/roc_curve_test.png> <../report_handoff/plots
-+metrics/clean_model_comparison_table.png>]
-<../report_handoff/plots+metrics/cnn/train_history.png, id=174, 578.16pt x 433.
+<../report_handoff/plots+metrics/cnn/train_history.png, id=157, 578.16pt x 433.
 62pt>
 File: ../report_handoff/plots+metrics/cnn/train_history.png Graphic file (type 
 png)
 <use ../report_handoff/plots+metrics/cnn/train_history.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/train_history.png 
- used on input line 197.
+ used on input line 200.
 (pdftex.def)             Requested size: 239.39923pt x 179.54533pt.
-<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=177, 361.35p
+[3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>]
+<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=176, 361.35p
 t x 361.35pt>
 File: ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png Graphic fil
 e (type png)
 <use ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/confusion_matrix_t
-est.png  used on input line 209.
+est.png  used on input line 212.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=178, 433.62pt x 361
+<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=177, 433.62pt x 361
 .35pt>
 File: ../report_handoff/plots+metrics/cnn/roc_curve_test.png Graphic file (type
  png)
 <use ../report_handoff/plots+metrics/cnn/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/roc_curve_test.png
-  used on input line 215.
+  used on input line 218.
 (pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
- [4 <../report_handoff/plots+metrics/cnn/train_history.png> <../report_handoff/
-plots+metrics/cnn/confusion_matrix_test.png> <../report_handoff/plots+metrics/c
-nn/roc_curve_test.png>]
+
+Underfull \hbox (badness 5260) in paragraph at lines 246--247
+[]\T1/ptm/m/n/10 These con-di-tions cor-re-spond to the eval-u-a-tion tags
+ []
+
+[4 <../report_handoff/plots+metrics/baseline/roc_curve_test.png> <../report_han
+doff/plots+metrics/clean_model_comparison_table.png> <../report_handoff/plots+m
+etrics/cnn/train_history.png> <../report_handoff/plots+metrics/cnn/confusion_ma
+trix_test.png> <../report_handoff/plots+metrics/cnn/roc_curve_test.png>]
 <../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=194, 7
 15.0715pt x 310.761pt>
 File: ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/evaluate_metr
-ics_table.png  used on input line 249.
+ics_table.png  used on input line 254.
 (pdftex.def)             Requested size: 239.39923pt x 104.04037pt.
 <../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png, id=195, 3
 61.35pt x 361.35pt>
@@ -565,7 +631,7 @@ File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_clean.png  used on input line 255.
+rix_clean.png  used on input line 260.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
 <../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=196
 , 361.35pt x 361.35pt>
@@ -573,10 +639,10 @@ File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png Gr
 aphic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_jpeg_q40.png  used on input line 261.
+rix_jpeg_q40.png  used on input line 266.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
 
-Underfull \hbox (badness 1558) in paragraph at lines 271--272
+Underfull \hbox (badness 1558) in paragraph at lines 276--277
 \T1/ptm/m/n/10 lit-er-a-ture, where cross-generator gen-er-al-iza-tion and post
 -
  []
@@ -607,9 +673,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (./main.aux)
+[6] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -624,7 +688,7 @@ Here is how much of TeX's memory you used:
  33638 multiletter control sequences out of 15000+600000
  671047 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1409b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1409b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
@@ -635,7 +699,7 @@ live/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 459319 bytes).
+Output written on main.pdf (6 pages, 464771 bytes).
 PDF statistics:
  295 PDF objects out of 1000 (max. 8388607)
  246 compressed objects within 3 object streams
