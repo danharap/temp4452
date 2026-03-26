@@ -1,0 +1,4 @@
+Prediction run complete.
+Model: models/cnn_model.pt
+Inputs evaluated: 12
+Threshold: 0.50

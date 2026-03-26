@@ -1,0 +1,452 @@
+# PROJECT_DECISIONS_ADDENDUM.md
+
+## Purpose
+This document captures the important judgment calls, constraints, defaults, and scope decisions for the AI-image detection course project.
+
+It is not meant to replace the main project documents.  
+It exists to preserve the important nuances and decision logic that came up during planning.
+
+Some items are fixed.  
+Some are current defaults and may change later.  
+Some are intentionally left open.  
+Some are rejected unless there is a strong reason to revisit them.
+
+---
+
+# 1. Project identity
+
+## Status: Fixed
+
+- This is a **deep learning / computer vision course project**.
+- The project is a **terminal-based AI-image detector**.
+- The main task is **binary classification**:
+  - `Real`
+  - `AI-generated`
+- The project is both:
+  - a usable detector
+  - and an academic comparison/evaluation project
+
+## Interpretation
+The software identity is:
+- detector
+
+The academic/report identity is:
+- detector
+- comparison of classical vs deep methods
+- robustness-aware evaluation project
+
+This distinction matters and should be preserved.
+
+---
+
+# 2. Scope decisions
+
+## Status: Fixed
+
+The project must include:
+- terminal-only interaction
+- one classical baseline
+- one deep CNN-based model
+- evaluation metrics
+- robustness testing
+- saved run artifacts
+- final prediction/inference workflow
+
+The project must not include:
+- dashboard
+- frontend
+- web app
+- REST API
+- database
+- cloud platform logic
+- giant experiment-management infrastructure
+- excessive engineering layers
+
+---
+
+# 3. Dataset decision
+
+## Status: Current default
+
+- Main dataset: **GenImage**
+- Use a **manageable subset**, not the full dataset
+- The subset should be:
+  - balanced between real and AI-generated classes
+  - split into train / validation / test
+  - saved in a reproducible way
+
+## Why
+GenImage is the best current fit because:
+- it directly matches the task
+- it includes real and AI-generated data
+- it supports robustness/generalization framing
+- it is literature-supported for this exact project direction
+
+## May change?
+- Exact subset size may change based on storage and compute constraints
+- Exact folder/path handling may change depending on how the dataset is downloaded locally
+
+---
+
+# 4. Model structure
+
+## Status: Fixed at high level / open in exact details
+
+### Fixed
+The project should use:
+- one classical baseline
+- one deep CNN model
+
+### Current default
+The deep model should be:
+- a transfer-learned **ResNet-family** model
+
+### Open
+The exact choice may still change between:
+- ResNet-18
+- ResNet-50
+
+### Why
+ResNet is the best current default because:
+- it is course-aligned
+- it is standard
+- it is believable for a strong student project
+- it is supported by benchmark practice
+- it does not feel weirdly exotic
+
+---
+
+# 5. Classical baseline
+
+## Status: Fixed at high level / open in exact details
+
+### Fixed
+The project should include one handcrafted-feature baseline.
+
+### Current default
+The baseline should use:
+- texture/statistical/frequency-aware image features
+- a standard classifier such as:
+  - SVM
+  - logistic regression
+
+### Open
+The exact feature set may still change after implementation details are finalized.
+
+### Important note
+The baseline exists to provide:
+- comparison
+- interpretability at a simple level
+- course alignment with classical CV foundations
+
+It should not become a giant second project.
+
+---
+
+# 6. Robustness testing
+
+## Status: Fixed
+
+The project should include:
+- JPEG compression testing
+- resizing / reduced-resolution testing
+
+## Why
+These are the most justified robustness tests for this project because:
+- they are supported by benchmark concerns in the literature
+- they are realistic
+- they are simple enough to implement cleanly
+- they strengthen the project without bloating it
+
+## Rejected unless needed
+- blur
+- noise
+- additional degradation suites
+- more advanced robustness expansions
+
+These can be added only if time remains and the core project is already solid.
+
+---
+
+# 7. Evaluation outputs
+
+## Status: Fixed
+
+The system should report:
+- accuracy
+- precision
+- recall
+- F1-score
+- confusion matrix
+- ROC-AUC when appropriate
+
+The system should also save:
+- per-image predictions
+- selected misclassified examples
+- plots and summary outputs
+
+---
+
+# 8. Final user-facing workflow
+
+## Status: Fixed
+
+The final project should support:
+- training/evaluation workflow during development
+- a final prediction workflow for one image and optionally a folder
+
+## Important nuance
+The final detector is the prediction path.  
+But the project still needs training and evaluation code as part of its actual system.
+
+So:
+- training is part of project construction
+- prediction is part of final usability
+
+These are different jobs and the code should reflect that.
+
+---
+
+# 9. Run-folder policy
+
+## Status: Fixed
+
+Every important run should create a new run folder.
+
+This replaces the need for a separate experiment-log document.
+
+Each run folder should save what is needed to understand what happened, such as:
+- config used
+- metrics
+- summaries
+- plots
+- model file when relevant
+- predictions
+- selected examples
+
+---
+
+# 10. Documentation policy
+
+## Status: Fixed
+
+We do **not** want many bloated documentation files.
+
+The main documentation structure should stay simple.
+
+### Main docs
+- high-level project definition + system design
+- construction plan + architecture
+- this decisions addendum
+
+### Important note
+This documentation is:
+- for project direction
+- for implementation
+- for future prompting
+- for report writers to reference later
+
+It is **not** the report itself.
+
+---
+
+# 11. Course alignment rule
+
+## Status: Fixed
+
+Course material should act as a **filter**, not a dictator.
+
+This means:
+- the project should visibly use ideas that were covered in class
+- but the project is not limited only to things explicitly taught
+- task-specific literature and dataset choices are allowed where appropriate
+
+## Course-aligned components
+Examples include:
+- CNNs
+- ResNet-family models
+- transfer learning
+- train/validation/test logic
+- evaluation metrics
+- failure analysis
+- classical CV-inspired baseline concepts
+- dataset bias awareness
+
+## Outside-course but acceptable additions
+Examples include:
+- GenImage
+- AI-image-detection literature
+- benchmark-specific robustness framing
+- task-specific handcrafted feature choices
+
+---
+
+# 12. Claims and interpretation policy
+
+## Status: Fixed
+
+The project should **not** make oversized claims such as:
+- “solving AI-image detection”
+- “discovering the true visual cues of synthetic images”
+- “generalizing universally to all future generators”
+
+The project should make modest, defensible claims.
+
+Preferred framing:
+- comparison of methods
+- performance on this benchmark setup
+- robustness under selected degradations
+- observed limitations and failure cases
+
+---
+
+# 13. Code style constraint
+
+## Status: Fixed
+
+This is one of the most important constraints in the whole project.
+
+The code should look like:
+- strong student work
+- clean
+- readable
+- explicit
+- standard
+- moderately modular
+- course-aligned
+
+The code should **not** look like:
+- enterprise ML infrastructure
+- a highly industrial production system
+- an overengineered research platform
+- generic “AI-coded” abstraction-heavy scaffolding
+
+## Avoid
+- giant file structures
+- excessive abstraction
+- plugin architectures
+- service layers
+- configuration overload
+- fancy logging infrastructure
+- over-polished generic helper systems
+- “future extensibility” design that hurts clarity
+
+## Prefer
+- direct scripts
+- compact helper modules
+- readable logic
+- standard library/framework usage
+- explicit flow
+- simple project layout
+
+---
+
+# 14. Cursor workflow rule
+
+## Status: Fixed
+
+The phased construction plan is for **human planning**, not for forcing the coding agent to build the project in tiny fragments.
+
+## Therefore
+When prompting Cursor:
+- give it the whole project context
+- give it the documentation
+- tell it to build the **entire coherent system**
+- do not ask it to stop after scaffolding
+- do not force it into fake tiny phases unless something breaks badly
+
+## Important nuance
+The system should still respect dependency order in actual usage:
+- dataset prep before training
+- training before final prediction
+- evaluation after models exist
+
+So:
+- full implementation can happen in one strong pass
+- actual testing/use still happens in logical dependency order
+
+---
+
+# 15. Docker decision
+
+## Status: Rejected unless needed
+
+Docker is not a core project requirement.
+
+### Current position
+- the project should work in a normal Python environment
+- Docker may be added later only if useful for packaging or reproducibility
+
+### Why
+Docker-first setup adds unnecessary complexity unless environment issues force it.
+
+---
+
+# 16. Rejected scope expansions
+
+## Status: Rejected unless needed
+
+The following are intentionally out of scope unless a strong reason appears later:
+- dashboard/frontend
+- multiple deep architectures
+- transformer-based primary detector
+- training-free primary method
+- giant benchmark comparison suite
+- custom paired real/AI dataset collection
+- complex interpretability add-ons
+- large-scale infrastructure/tooling
+- multiple classical baselines
+- report-oriented overengineering in the codebase
+
+---
+
+# 17. Open decisions
+
+## Status: Open / may change
+
+These are not fully locked yet:
+- exact GenImage subset size
+- exact local dataset storage layout
+- exact handcrafted feature set
+- final choice between ResNet-18 vs ResNet-50
+- whether folder inference is included in the first final version or after single-image inference is solid
+- whether Docker is added later for convenience
+
+These can change without changing the project’s identity.
+
+---
+
+# 18. Current defaults summary
+
+## Status: Current default
+
+If a new chat or coding pass needs the best current defaults, use these:
+
+- dataset: GenImage subset
+- task: binary real vs AI-generated classification
+- interface: terminal only
+- classical baseline: handcrafted frequency/texture/statistical features + SVM/logistic regression
+- deep model: transfer-learned ResNet-family CNN
+- robustness tests: JPEG compression + resizing
+- outputs: metrics, plots, predictions, run folders, saved examples
+- code style: believable strong student work, not industrial code
+- documentation style: compact, useful, not bloated
+- Cursor behavior: build full coherent system, not fake tiny phases
+
+---
+
+# 19. Final interpretation rule
+
+## Status: Fixed
+
+If a future assistant/chat/model is unsure about a recommendation, it should prefer:
+- the simpler buildable option
+- the course-aligned option
+- the standard readable option
+- the non-bloated option
+
+It should not expand scope casually.
+It should not optimize for impressiveness over coherence.
+
+That is a core project rule.
+

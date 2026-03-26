@@ -1,0 +1,5 @@
+Baseline training complete.
+Saved main model: models/baseline_model.joblib
+Test accuracy: 0.7142
+Test F1: 0.7211
+Test ROC-AUC: 0.7951206597222222

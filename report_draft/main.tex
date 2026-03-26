@@ -1,0 +1,266 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\title{Robust AI-Image Detection Using a Classical Baseline and a Transfer-Learned CNN}
+
+\author{
+\IEEEauthorblockN{Daniel Harapiak}
+\IEEEauthorblockA{
+Department of Computer Science\\
+Western University\\
+London, ON, Canada\\
+your\_email@uwo.ca
+}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This project investigates binary AI-image detection under realistic deployment constraints. The task is to classify natural images (real) versus AI-generated images using a terminal-only system and reproducible run artifacts. A balanced subset from the GenImage benchmark is used, with training/validation/testing split into 22,400/4,800/4,800 images. Two models are compared: (1) a classical handcrafted-feature baseline using logistic regression and (2) a transfer-learned ResNet-18 convolutional neural network (CNN). In clean test conditions, the baseline reaches 0.7142 accuracy and 0.7211 F1, while the CNN reaches 0.9465 accuracy and 0.9452 F1. Robustness tests on JPEG compression and resizing show major degradation for the CNN under aggressive perturbations (e.g., JPEG Q40 F1 = 0.5945), indicating sensitivity to distribution shift despite strong clean performance. The key contribution is a clear, course-aligned and reproducible comparison between classical and deep methods, including robustness analysis and practical limits of generalization.
+\end{abstract}
+
+\begin{IEEEkeywords}
+AI image detection, deep learning, computer vision, transfer learning, robustness, logistic regression, ResNet
+\end{IEEEkeywords}
+
+\section{Introduction}
+Recent text-to-image generators have made synthetic image content widely accessible, increasing the need for reliable AI-image detection systems. Modern generation pipelines span GAN-based methods~\cite{goodfellow2014gan,karras2020stylegan2} and diffusion-based methods~\cite{ho2020ddpm,rombach2022ldm}, and image realism has improved rapidly over only a few years. As quality improves, simple visual inspection becomes less reliable and automated forensics-style detection becomes more important for practical use cases such as dataset curation, moderation support, and integrity checks in academic and industrial workflows~\cite{verdoliva2020mediaforensics}.
+
+At the same time, prior work shows that detector performance is highly sensitive to data distribution, generator family, and post-processing transformations~\cite{wang2020cnn,chai2020makes}. In other words, a detector can score very well on a clean benchmark split but still degrade significantly when inputs are compressed, resized, or produced by unseen generators. This gap between clean-benchmark performance and deployment reality motivates stronger evaluation design rather than relying on a single headline accuracy number.
+
+This project addresses a practical binary classification problem: detect whether an input image is real (natural) or AI-generated. The project is scoped as both a usable detector and an academic evaluation. It includes a classical baseline, a deep CNN model, and robustness testing. The central challenge is not only maximizing clean-set accuracy, but understanding how performance changes under realistic degradations such as compression and resizing.
+
+The implementation is intentionally course-aligned and reproducible: fixed split manifests, explicit model configurations, saved run artifacts, and evaluation outputs that can be independently checked. This design supports methodological transparency and clearer comparison between model families.
+
+This work focuses on three research goals. \textbf{O1} is to build a reproducible AI-image detection pipeline using fixed train/validation/test splits. \textbf{O2} is to compare a classical handcrafted-feature baseline against a transfer-learned CNN under the same split conditions. \textbf{O3} is to evaluate robustness of the best model under JPEG compression and resolution reduction.
+
+The report is structured as follows: Section II reviews background and related work; Section III explains objectives and methodology; Section IV presents results and analysis; Section V concludes with limitations, lessons learned, and future work.
+
+\section{Background and Related Work}
+\subsection{AI-image detection and dataset choice}
+AI-image detection has become an important computer vision problem due to rapid improvements in generative models. The GenImage benchmark is designed for this task and is widely used for evaluating detector generalization across generators and settings~\cite{zhu2023genimage}. To keep the project computationally manageable while preserving class balance and reproducibility, this implementation uses two generators (BigGAN and Midjourney) and fixed split manifests. This follows prior evidence that cross-generator setup choices strongly affect reported detector performance~\cite{zhu2023genimage,ojha2023universal}.
+
+\subsection{Classical versus deep approaches}
+Classical approaches often rely on handcrafted frequency/statistical cues and linear or kernelized classifiers. They are easier to interpret and cheaper to train, but usually underperform deep models on complex visual distributions.
+
+Deep CNNs, especially transfer-learned ResNet variants, are strong baselines for image classification tasks and are course-aligned in terms of architecture, optimization, and evaluation methodology~\cite{he2016resnet,torchvisiondocs}. Prior fake-image detection work also reports that both semantic and frequency-domain cues can be useful, depending on the generator family and test conditions~\cite{frank2020leveraging,wang2020cnn}.
+
+\subsection{Robustness and distribution shift in prior work}
+Prior studies in synthetic-image detection and domain generalization report that detector quality can drop under shifts such as compression, resampling, and generator changes~\cite{wang2020cnn,chai2020makes,ojha2023universal}. This motivates a report design that includes both clean test performance and controlled perturbation tests. In this project, JPEG and resize were selected because they are realistic user-side transformations and were explicitly prioritized during project planning.
+
+\subsection{Research gap addressed}
+Many class projects report only clean accuracy. This work explicitly compares a classical baseline with a transfer-learned CNN and then evaluates robustness under deployment-relevant degradations (JPEG and resize), making results more informative than clean-only reporting.
+
+\section{Methods}
+\subsection{Research objectives and significance}
+\textbf{O1} provides reproducibility via fixed split manifests and saved run artifacts.\\
+\textbf{O2} provides a fair model comparison between classical and deep learning strategies.\\
+\textbf{O3} provides practical insight into deployment risks under image quality shifts.
+
+These objectives are significant because they balance theoretical model comparison with practical detector behavior under noisy real-world conditions.
+
+\subsection{Dataset and splits}
+The project uses a GenImage-derived subset with two generators, BigGAN and Midjourney, and two classes, real (nature) and ai. The combined split counts are 22,400 for training, 4,800 for validation, and 4,800 for testing.
+
+All major runs save configs and outputs to timestamped folders for traceability.
+
+\begin{table}[htbp]
+\caption{Per-Generator Split Counts (per class)}
+\label{tab:split-counts}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Split & BigGAN (ai/real) & Midjourney (ai/real) & Combined \\
+\midrule
+Train & 5600 / 5600 & 5600 / 5600 & 22400 \\
+Val & 1200 / 1200 & 1200 / 1200 & 4800 \\
+Test & 1200 / 1200 & 1200 / 1200 & 4800 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Research question and hypothesis}
+The guiding research question is: \emph{How much does a transfer-learned CNN improve AI-image detection quality over a classical handcrafted-feature baseline, and how stable is that improvement under common degradations?}
+
+Hypothesis H1: the CNN will significantly outperform the baseline on clean test data.\\
+Hypothesis H2: both models, especially the CNN, will lose performance under stronger JPEG and resize perturbations.
+
+From a systems perspective, this question is relevant for two reasons. First, the course project must compare a classical and deep method with defensible methodology. Second, the final detector is intended for practical use through terminal inference, so robustness under common transformations matters as much as clean-set ranking.
+
+\subsection{Model 1: Classical baseline}
+The baseline extracts handcrafted image features and trains a logistic regression classifier with standardization. The feature set includes a grayscale histogram (32 bins), RGB channel means and standard deviations, gradient magnitude statistics, FFT-derived low/high-frequency energy statistics, and an entropy feature.
+
+The classifier is implemented as \texttt{StandardScaler + LogisticRegression (lbfgs)}.
+
+\subsection{Model 2: Transfer-learned CNN}
+The deep model is a transfer-learned ResNet-18 binary classifier~\cite{he2016resnet}. The final fully-connected layer is replaced with one output logit and trained using BCEWithLogitsLoss. The main settings are image size $224 \times 224$, 8 epochs, batch size 48, learning rate $3 \times 10^{-4}$, weight decay $1 \times 10^{-5}$, and decision threshold 0.5.
+
+Validation F1 is used for best-checkpoint selection.
+
+\subsection{Implementation strategy}
+The project follows a cyclic build/test/feedback process: fixed split manifests are finalized and converted to split CSV files; the classical baseline is trained and evaluated as a comparison anchor; the CNN is then trained and the best checkpoint is selected using validation F1; robustness evaluation is run on clean, JPEG, and resize variants; and finally detector inference is run on unseen user-provided images.
+Each stage writes reproducibility artifacts (\texttt{config\_used.yaml}, \texttt{metrics.json}, summaries, plots, and prediction outputs) to timestamped run folders.
+
+This implementation strategy also reduces reporting risk: every metric and figure in the report can be traced to an artifact file. That traceability is important for academic integrity and for reproducibility checks by instructors or TAs.
+
+\subsection{Evaluation metrics and robustness protocol}
+For both models, the report uses:
+\begin{equation}
+\text{Precision}=\frac{TP}{TP+FP}, \quad
+\text{Recall}=\frac{TP}{TP+FN}
+\end{equation}
+\begin{equation}
+F1 = 2\cdot\frac{\text{Precision}\cdot\text{Recall}}{\text{Precision}+\text{Recall}}
+\end{equation}
+
+Also reported are accuracy, confusion matrix, ROC-AUC, and per-image predictions. Robustness is evaluated on CNN outputs using JPEG qualities Q85, Q60, and Q40, and resize scales of 0.75 and 0.5 (downsample then upsample).
+
+Descriptive statistics are reported directly from confusion matrices and aggregated metrics (precision, recall, F1, ROC-AUC) for each condition. Data gathering instruments are the saved split CSV manifests and run artifacts generated by training/evaluation scripts. The baseline classifier is a regularized logistic regression pipeline~\cite{sklearnlogreg}, while ROC-AUC interpretation follows standard binary-classification practice~\cite{fawcett2006roc}.
+
+\subsection{Threats to validity}
+The system is trained on two generators only (BigGAN and Midjourney), so out-of-distribution generalization to newer models (e.g., ChatGPT/Gemini image outputs) is expected to be weaker. Additional threats include limited hyperparameter search and single-project compute constraints.
+
+Another validity threat is that resizing all images to a common input size can suppress fine-grained generator-specific artifacts. While this standardization is necessary for stable CNN training and fair baseline comparison, it may hide subtle cues that exist at native resolution.
+
+\section{Results and Analysis}
+\subsection{Clean model comparison}
+Table~\ref{tab:clean-results} summarizes test metrics for baseline and CNN.
+
+\begin{table}[htbp]
+\caption{Clean Test-Set Comparison}
+\label{tab:clean-results}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Acc. & Prec. & Recall & F1 & ROC-AUC \\
+\midrule
+Baseline & 0.7142 & 0.7040 & 0.7392 & 0.7211 & 0.7951 \\
+CNN (ResNet-18) & 0.9465 & 0.9685 & 0.9229 & 0.9452 & 0.9887 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The CNN substantially outperforms the classical baseline on all clean-set metrics, supporting the expected advantage of transfer-learned deep features for this task.
+
+Figure~\ref{fig:baseline-cm} and Figure~\ref{fig:baseline-roc} provide baseline decision behavior on the test set. Compared to the CNN, the baseline has both lower separability and higher class confusion, which is consistent with the large metric gap in Table~\ref{tab:clean-results}.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/baseline/confusion_matrix_test.png}}
+\caption{Baseline confusion matrix on clean test set.}
+\label{fig:baseline-cm}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/baseline/roc_curve_test.png}}
+\caption{Baseline ROC curve on clean test set.}
+\label{fig:baseline-roc}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/clean_model_comparison_table.png}}
+\caption{Clean model comparison table exported from run artifacts.}
+\label{fig:clean-table}
+\end{figure}
+
+\subsection{CNN training dynamics}
+Training curves indicate stable optimization and convergence within 8 epochs.
+
+The training history indicates that validation performance improves quickly and then plateaus, suggesting the chosen epoch budget is sufficient for this project scope. This matters methodologically because it reduces the chance that the CNN advantage is simply due to under-training of one model family.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/cnn/train_history.png}}
+\caption{CNN training and validation history across epochs.}
+\label{fig:train-history}
+\end{figure}
+
+\subsection{Confusion matrix and ROC interpretation}
+On clean data, the CNN confusion matrix shows low error in both classes, and ROC performance is near ideal.
+
+In contrast, the baseline confusion matrix shows more symmetric class overlap, which is expected when handcrafted features do not fully capture generator artifacts across diverse content. ROC separation is therefore weaker for the baseline, matching its lower AUC.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/cnn/confusion_matrix_test.png}}
+\caption{CNN confusion matrix on clean test set.}
+\label{fig:cnn-cm}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/cnn/roc_curve_test.png}}
+\caption{CNN ROC curve on clean test set.}
+\label{fig:cnn-roc}
+\end{figure}
+
+\subsection{Robustness results}
+Table~\ref{tab:robust-results} shows robustness outcomes for the CNN.
+
+\begin{table}[htbp]
+\caption{CNN Robustness Across Degradations}
+\label{tab:robust-results}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Condition & Accuracy & F1 & ROC-AUC \\
+\midrule
+Clean & 0.9465 & 0.9452 & 0.9887 \\
+JPEG Q85 & 0.7931 & 0.7501 & 0.9159 \\
+JPEG Q60 & 0.7388 & 0.6596 & 0.8830 \\
+JPEG Q40 & 0.7050 & 0.5945 & 0.8728 \\
+Resize 0.75 & 0.9006 & 0.9024 & 0.9619 \\
+Resize 0.5 & 0.7521 & 0.7763 & 0.8209 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The model remains fairly strong under mild resizing and JPEG Q85, but performance drops sharply under heavier JPEG compression (especially recall) and more aggressive downscaling. This indicates the detector is learning useful but somewhat fragile visual cues.
+
+From the confusion matrices, the dominant failure mode under JPEG Q40 is an increase in false negatives for the AI class (AI images mislabeled as real). This aligns with the recall collapse from 0.9229 (clean) to 0.4325 (JPEG Q40), while precision stays high due to more conservative positive predictions.
+
+This precision-recall imbalance is practically important. In a deployment scenario, high false negatives for AI images can be more harmful than moderate false positives because synthetic content may bypass screening. Therefore, threshold tuning and robustness-aware calibration should be considered part of future deployment preparation, not optional post-processing.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png}}
+\caption{Evaluation summary table across clean and degraded conditions.}
+\label{fig:eval-table}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png}}
+\caption{CNN confusion matrix under clean condition during robustness evaluation.}
+\label{fig:eval-cm-clean}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png}}
+\caption{CNN confusion matrix under heavy JPEG compression (Q40).}
+\label{fig:eval-cm-jpeg40}
+\end{figure}
+
+\subsection{Discussion}
+H1 is strongly supported: the transfer-learned CNN significantly outperforms the classical baseline in clean conditions. H2 is also supported: robustness testing reveals that strong clean metrics do not guarantee stable behavior under common image degradations.
+
+In terms of practical impact, the system is useful for controlled benchmark-like conditions, but should not be presented as universally robust AI-image detection. The report handoff notes this explicitly: since training used only BigGAN and Midjourney, performance is expected to drop for unseen modern generators (e.g., ChatGPT/Gemini outputs). This limitation is a central interpretation point, not a side note.
+
+This behavior is consistent with broader findings in the literature, where cross-generator generalization and post-processing robustness remain unresolved even for strong detectors~\cite{zhu2023genimage,ojha2023universal,chai2020makes}.
+
+\section{Conclusion and Future Work}
+This project delivered a reproducible AI-image detector with a course-aligned experimental structure: classical baseline, deep CNN, and robustness evaluation. The CNN achieved high clean performance (accuracy 0.9465, F1 0.9452), while the baseline provided a useful lower-bound reference (accuracy 0.7142, F1 0.7211). Robustness experiments showed substantial sensitivity to compression and aggressive resizing, which is the most important practical finding.
+
+Future work includes training with additional generators to improve out-of-distribution generalization, augmentation and robustness-aware training for compression and resize resistance, threshold calibration with error analysis by source generator or domain, and testing lightweight ensemble or frequency-aware hybrid models.
+
+Main lessons learned are that reproducible artifacts and robust evaluation are essential, and that clean-test performance alone can overestimate real-world reliability.
+
+\section*{Acknowledgment}
+The author thanks the CS4452 instructional team for guidance and evaluation criteria, and acknowledges use of the GenImage dataset and open-source PyTorch tooling.
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

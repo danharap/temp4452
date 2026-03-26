@@ -1,0 +1,16 @@
+seed: 42
+model_type: "cnn"             # cnn or baseline
+model_path: "models/cnn_model.pt"
+split_dir: "data/splits"
+image_size: 224
+batch_size: 32
+num_workers: 2
+threshold: 0.5
+
+robustness:
+  evaluate_clean: true
+  jpeg_qualities: [85, 60, 40]
+  resize_scales: [0.75, 0.5]
+
+output:
+  max_misclassified_examples: 30

@@ -1,0 +1,20 @@
+seed: 42
+raw_data_root: "/path/to/genimage/root"
+selected_generators: null   # example: ["sdxl", "midjourney"]
+ai_folder_name: "ai"
+real_folder_name: "nature"
+
+subset:
+  enabled: true
+  max_per_class: 4000
+
+split:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+output:
+  data_dir: "data"
+  split_dir: "data/splits"
+  manifest_filename: "manifest_full.csv"
+  subset_manifest_filename: "manifest_subset.csv"

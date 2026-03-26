@@ -1,0 +1,13 @@
+path,prob_ai,predicted_label,predicted_class,confidence,threshold,decision
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/401_biggan_00124.png,1.0,1,ai,1.0,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/487_biggan_00011.png,0.9998723268508911,1,ai,0.9998723268508911,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/503_midjourney_197.png,0.7765308618545532,1,ai,0.7765308618545532,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/503_midjourney_34.png,0.9966720342636108,1,ai,0.9966720342636108,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/508_midjourney_34.png,0.6469843983650208,1,ai,0.6469843983650208,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/569_biggan_00180.png,0.9999994039535522,1,ai,0.9999994039535522,0.5,Likely AI-generated
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n01843383_1803.JPEG,0.08534997701644897,0,real,0.914650022983551,0.5,Likely real
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n01978455_8424.JPEG,0.001565576414577663,0,real,0.9984344235854223,0.5,Likely real
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n02093754_4420.JPEG,7.460216238541761e-06,0,real,0.9999925397837615,0.5,Likely real
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n02110958_8519.JPEG,0.00025325728347525,0,real,0.9997467427165247,0.5,Likely real
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n02790996_1323.JPEG,0.005184006877243519,0,real,0.9948159931227565,0.5,Likely real
+/Users/maxcope/Desktop/University/CS4452/Final Project/ai_detector/data/test_images/n02791270_428.JPEG,0.050551313906908035,0,real,0.949448686093092,0.5,Likely real

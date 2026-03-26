@@ -1,0 +1,6 @@
+CNN training complete.
+Device: cpu
+Saved main model: models/cnn_model.pt
+Test accuracy: 0.9465
+Test F1: 0.9452
+Test ROC-AUC: 0.9887485243055555

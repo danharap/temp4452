@@ -1,0 +1,9 @@
+Evaluation complete.
+Model type: cnn
+
+[clean] acc=0.9465, f1=0.9452, roc_auc=0.9887485243055555
+[jpeg_q85] acc=0.7931, f1=0.7501, roc_auc=0.9158529513888889
+[jpeg_q60] acc=0.7388, f1=0.6596, roc_auc=0.8829911458333333
+[jpeg_q40] acc=0.7050, f1=0.5945, roc_auc=0.8728133680555555
+[resize_0p75] acc=0.9006, f1=0.9024, roc_auc=0.9619307291666666
+[resize_0p5] acc=0.7521, f1=0.7763, roc_auc=0.820921875

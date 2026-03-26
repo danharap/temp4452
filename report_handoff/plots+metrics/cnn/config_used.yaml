@@ -1,0 +1,17 @@
+seed: 42
+split_dir: data/splits
+image_size: 224
+model:
+  backbone: resnet18
+  pretrained: true
+  dropout: 0.0
+train:
+  epochs: 8
+  batch_size: 48
+  learning_rate: 0.0003
+  weight_decay: 1.0e-05
+  num_workers: 8
+  threshold: 0.5
+output:
+  model_path: models/cnn_model.pt
+  max_misclassified_examples: 30
