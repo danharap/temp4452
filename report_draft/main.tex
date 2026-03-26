@@ -150,6 +150,7 @@ CNN (ResNet-18) & 0.9465 & 0.9685 & 0.9229 & 0.9452 & 0.9887 \\
 The CNN substantially outperforms the classical baseline on all clean-set metrics, supporting the expected advantage of transfer-learned deep features for this task.
 
 Figure~\ref{fig:baseline-cm} and Figure~\ref{fig:baseline-roc} provide baseline decision behavior on the test set. Compared to the CNN, the baseline has both lower separability and higher class confusion, which is consistent with the large metric gap in Table~\ref{tab:clean-results}.
+The consolidated visual comparison in Figure~\ref{fig:clean-table} presents the same clean-condition ranking in a compact report-ready format.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/baseline/confusion_matrix_test.png}}
@@ -173,6 +174,7 @@ Figure~\ref{fig:baseline-cm} and Figure~\ref{fig:baseline-roc} provide baseline 
 Training curves indicate stable optimization and convergence within 8 epochs.
 
 The training history indicates that validation performance improves quickly and then plateaus, suggesting the chosen epoch budget is sufficient for this project scope. This matters methodologically because it reduces the chance that the CNN advantage is simply due to under-training of one model family.
+This trend is visible in Figure~\ref{fig:train-history}, where validation metrics stabilize in later epochs.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/cnn/train_history.png}}
@@ -184,6 +186,7 @@ The training history indicates that validation performance improves quickly and 
 On clean data, the CNN confusion matrix shows low error in both classes, and ROC performance is near ideal.
 
 In contrast, the baseline confusion matrix shows more symmetric class overlap, which is expected when handcrafted features do not fully capture generator artifacts across diverse content. ROC separation is therefore weaker for the baseline, matching its lower AUC.
+For the CNN, Figure~\ref{fig:cnn-cm} and Figure~\ref{fig:cnn-roc} show strong class separation and high ranking quality on the clean test set.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/cnn/confusion_matrix_test.png}}
@@ -223,6 +226,7 @@ The model remains fairly strong under mild resizing and JPEG Q85, but performanc
 From the confusion matrices, the dominant failure mode under JPEG Q40 is an increase in false negatives for the AI class (AI images mislabeled as real). This aligns with the recall collapse from 0.9229 (clean) to 0.4325 (JPEG Q40), while precision stays high due to more conservative positive predictions.
 
 This precision-recall imbalance is practically important. In a deployment scenario, high false negatives for AI images can be more harmful than moderate false positives because synthetic content may bypass screening. Therefore, threshold tuning and robustness-aware calibration should be considered part of future deployment preparation, not optional post-processing.
+Figure~\ref{fig:eval-table} summarizes robustness metrics across all tested perturbations, while Figure~\ref{fig:eval-cm-clean} and Figure~\ref{fig:eval-cm-jpeg40} provide the clean-vs-degraded confusion-matrix contrast discussed above.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png}}
