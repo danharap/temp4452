@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  26 MAR 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  26 MAR 2026 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,24 +413,24 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -455,21 +455,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 38.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 42--43
+Underfull \hbox (badness 1584) in paragraph at lines 59--60
 \T1/ptm/m/n/10 train/validation/test splits. \T1/ptm/b/n/10 O2 \T1/ptm/m/n/10 i
 s to com-pare a clas-si-cal
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 51--52
-[]\T1/ptm/m/n/10 Classical ap-proaches of-ten rely on hand-crafted fre-
  []
 
 [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
@@ -477,107 +472,111 @@ ocal/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+Underfull \hbox (badness 4569) in paragraph at lines 68--69
+[]\T1/ptm/m/n/10 Classical ap-proaches of-ten rely on hand-crafted fre-
+ []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-0.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+7.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [2]
-Overfull \hbox (2.47142pt too wide) in paragraph at lines 140--148
+Overfull \hbox (2.47142pt too wide) in paragraph at lines 157--165
  [][] 
  []
 
-<../report_handoff/plots+metrics/baseline/confusion_matrix_test.png, id=155, 36
+<../report_handoff/plots+metrics/baseline/confusion_matrix_test.png, id=152, 36
 1.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png Graphi
 c file (type png)
 <use ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/confusion_mat
-rix_test.png  used on input line 156.
+rix_test.png  used on input line 173.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=157, 433.62pt 
+<../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=154, 433.62pt 
 x 361.35pt>
 File: ../report_handoff/plots+metrics/baseline/roc_curve_test.png Graphic file 
 (type png)
 <use ../report_handoff/plots+metrics/baseline/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/roc_curve_tes
-t.png  used on input line 162.
+t.png  used on input line 179.
 (pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
-<../report_handoff/plots+metrics/clean_model_comparison_table.png, id=158, 678.
+<../report_handoff/plots+metrics/clean_model_comparison_table.png, id=155, 678.
 9365pt x 194.7275pt>
 File: ../report_handoff/plots+metrics/clean_model_comparison_table.png Graphic 
 file (type png)
 <use ../report_handoff/plots+metrics/clean_model_comparison_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/clean_model_comparison
-_table.png  used on input line 168.
+_table.png  used on input line 185.
 (pdftex.def)             Requested size: 239.39923pt x 68.66373pt.
-<../report_handoff/plots+metrics/cnn/train_history.png, id=160, 578.16pt x 433.
+[3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png> <../rep
+ort_handoff/plots+metrics/baseline/roc_curve_test.png> <../report_handoff/plots
++metrics/clean_model_comparison_table.png>]
+<../report_handoff/plots+metrics/cnn/train_history.png, id=174, 578.16pt x 433.
 62pt>
 File: ../report_handoff/plots+metrics/cnn/train_history.png Graphic file (type 
 png)
 <use ../report_handoff/plots+metrics/cnn/train_history.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/train_history.png 
- used on input line 180.
+ used on input line 197.
 (pdftex.def)             Requested size: 239.39923pt x 179.54533pt.
-[3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png> <../rep
-ort_handoff/plots+metrics/baseline/roc_curve_test.png> <../report_handoff/plots
-+metrics/clean_model_comparison_table.png>]
-<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=178, 361.35p
+<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=177, 361.35p
 t x 361.35pt>
 File: ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png Graphic fil
 e (type png)
 <use ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/confusion_matrix_t
-est.png  used on input line 192.
+est.png  used on input line 209.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=179, 433.62pt x 361
+<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=178, 433.62pt x 361
 .35pt>
 File: ../report_handoff/plots+metrics/cnn/roc_curve_test.png Graphic file (type
  png)
 <use ../report_handoff/plots+metrics/cnn/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/roc_curve_test.png
-  used on input line 198.
+  used on input line 215.
 (pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
-<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=184, 7
+ [4 <../report_handoff/plots+metrics/cnn/train_history.png> <../report_handoff/
+plots+metrics/cnn/confusion_matrix_test.png> <../report_handoff/plots+metrics/c
+nn/roc_curve_test.png>]
+<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=194, 7
 15.0715pt x 310.761pt>
 File: ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/evaluate_metr
-ics_table.png  used on input line 232.
+ics_table.png  used on input line 249.
 (pdftex.def)             Requested size: 239.39923pt x 104.04037pt.
-<../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png, id=185, 3
+<../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png, id=195, 3
 61.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_clean.png  used on input line 238.
+rix_clean.png  used on input line 255.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=186
+<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=196
 , 361.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png Gr
 aphic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_jpeg_q40.png  used on input line 244.
+rix_jpeg_q40.png  used on input line 261.
 (pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
- [4 <../report_handoff/plots+metrics/cnn/train_history.png> <../report_handoff/
-plots+metrics/cnn/confusion_matrix_test.png> <../report_handoff/plots+metrics/c
-nn/roc_curve_test.png>]
-Underfull \hbox (badness 1558) in paragraph at lines 254--255
+
+Underfull \hbox (badness 1558) in paragraph at lines 271--272
 \T1/ptm/m/n/10 lit-er-a-ture, where cross-generator gen-er-al-iza-tion and post
 -
  []
@@ -621,11 +620,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  11486 strings out of 474116
  179974 string characters out of 5743681
- 1948187 words of memory out of 5000000
+ 1951187 words of memory out of 5000000
  33638 multiletter control sequences out of 15000+600000
  671047 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1069b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1409b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
@@ -636,7 +635,7 @@ live/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 458276 bytes).
+Output written on main.pdf (6 pages, 459319 bytes).
 PDF statistics:
  295 PDF objects out of 1000 (max. 8388607)
  246 compressed objects within 3 object streams

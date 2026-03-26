@@ -17,13 +17,29 @@ Western University\\
 London, ON, Canada\\
 your\_email@uwo.ca
 }
+\and
+\IEEEauthorblockN{Aydan Karmali}
+\IEEEauthorblockA{
+Department of Computer Science\\
+Western University\\
+London, ON, Canada\\
+aydan\_email@uwo.ca
+}
+\and
+\IEEEauthorblockN{Max Cope}
+\IEEEauthorblockA{
+Department of Computer Science\\
+Western University\\
+London, ON, Canada\\
+max\_email@uwo.ca
+}
 }
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This project investigates binary AI-image detection under realistic deployment constraints. The task is to classify natural images (real) versus AI-generated images using a terminal-only system and reproducible run artifacts. A balanced subset from the GenImage benchmark is used, with training/validation/testing split into 22,400/4,800/4,800 images. Two models are compared: (1) a classical handcrafted-feature baseline using logistic regression and (2) a transfer-learned ResNet-18 convolutional neural network (CNN). In clean test conditions, the baseline reaches 0.7142 accuracy and 0.7211 F1, while the CNN reaches 0.9465 accuracy and 0.9452 F1. Robustness tests on JPEG compression and resizing show major degradation for the CNN under aggressive perturbations (e.g., JPEG Q40 F1 = 0.5945), indicating sensitivity to distribution shift despite strong clean performance. The key contribution is a clear, course-aligned and reproducible comparison between classical and deep methods, including robustness analysis and practical limits of generalization.
+This project investigates binary AI-image detection under realistic deployment constraints. The task is to classify natural images (real) versus AI-generated images using a terminal-only system and reproducible run artifacts. A balanced subset from the GenImage benchmark is used, with training/validation/testing split into 22,400/4,800/4,800 images. Two models are compared: (1) a classical handcrafted-feature baseline using logistic regression and (2) a transfer-learned ResNet-18 convolutional neural network (CNN). In clean test conditions, the baseline reaches 0.7142 accuracy and 0.7211 F1, while the CNN reaches 0.9465 accuracy and 0.9452 F1. Robustness tests on JPEG compression and resizing show major degradation for the CNN under aggressive perturbations (e.g., JPEG Q40 F1 = 0.5945), indicating sensitivity to distribution shift despite strong clean performance. The key contribution is a clear, course-aligned and reproducible comparison between classical and deep methods, including robustness analysis and practical limits of generalization. The main conclusion is that strong clean-set performance does not imply deployment robustness, and the most important lesson learned is that reproducible artifact tracking plus robustness evaluation should be treated as core methodology rather than optional extras; future work will expand generator coverage and robustness-aware training.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -38,6 +54,7 @@ At the same time, prior work shows that detector performance is highly sensitive
 This project addresses a practical binary classification problem: detect whether an input image is real (natural) or AI-generated. The project is scoped as both a usable detector and an academic evaluation. It includes a classical baseline, a deep CNN model, and robustness testing. The central challenge is not only maximizing clean-set accuracy, but understanding how performance changes under realistic degradations such as compression and resizing.
 
 The implementation is intentionally course-aligned and reproducible: fixed split manifests, explicit model configurations, saved run artifacts, and evaluation outputs that can be independently checked. This design supports methodological transparency and clearer comparison between model families.
+In terms of novelty and project progress, this report moves beyond clean-only model comparison by integrating robustness analysis into the core evaluation flow. In terms of impact, the results are practically relevant for how AI-image detectors should be deployed and theoretically relevant for understanding the gap between benchmark accuracy and performance under distribution shift.
 
 This work focuses on three research goals. \textbf{O1} is to build a reproducible AI-image detection pipeline using fixed train/validation/test splits. \textbf{O2} is to compare a classical handcrafted-feature baseline against a transfer-learned CNN under the same split conditions. \textbf{O3} is to evaluate robustness of the best model under JPEG compression and resolution reduction.
 
