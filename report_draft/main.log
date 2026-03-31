@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  26 MAR 2026 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  31 MAR 2026 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,47 +405,73 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks24
+\MT@tempbox=\box55
+\MT@count=\count297
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen192
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count298
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip55
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count299
+\l__pdf_internal_box=\box56
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen192
-\scratchbox=\box56
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen193
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count300
+\scratchdimen=\dimen193
+\scratchbox=\box57
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen194
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -455,210 +481,135 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 46.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
+LaTeX Info: Redefining \microtypecontext on input line 46.
+Package microtype Info: Applying patch `item' on input line 46.
+Package microtype Info: Applying patch `toc' on input line 46.
+Package microtype Info: Applying patch `eqnum' on input line 46.
+Package microtype Info: Applying patch `footnote' on input line 46.
+Package microtype Info: Applying patch `verbatim' on input line 46.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 46.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
 
-Underfull \hbox (badness 1584) in paragraph at lines 59--60
-\T1/ptm/m/n/10 train/validation/test splits. \T1/ptm/b/n/10 O2 \T1/ptm/m/n/10 i
-s to com-pare a clas-si-cal
- []
-
-[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
-ocal/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+) [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr
+/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 4569) in paragraph at lines 68--69
-[]\T1/ptm/m/n/10 Classical ap-proaches of-ten rely on hand-crafted fre-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 89
-.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
-
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (32.40932pt too wide) in paragraph at lines 123--124
-[]\T1/ptm/m/n/10 Training uses \T1/pcr/m/n/10 build_image_transform(is_train=tr
-ue)\T1/ptm/m/n/10 ,
- []
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
+9.
 
-
-Underfull \hbox (badness 1661) in paragraph at lines 123--124
-\T1/ptm/m/n/10 in-puts us-ing mean/std \T1/pcr/m/n/10 [0.485, 0.456, 0.406] \T1
-/ptm/m/n/10 and
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-[]\T1/ptm/m/n/10 Concretely, ex-per-i-ments were run by ex-e-cut-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/ptm/m/n/10 ing \T1/pcr/m/n/10 train_baseline.py\T1/ptm/m/n/10 , \T1/pcr/m/n
-/10 train_cnn.py\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/pcr/m/n/10 evaluate.py\T1/ptm/m/n/10 , and \T1/pcr/m/n/10 predict.py \T1/pt
-m/m/n/10 with their
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/ptm/m/n/10 YAML con-figs in \T1/pcr/m/n/10 ai_detector/configs\T1/ptm/m/n/1
-0 ; each
- []
-
-
-Underfull \hbox (badness 6412) in paragraph at lines 131--132
-\T1/ptm/m/n/10 com-mand cre-ates a times-tamped run di-rec-tory un-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/pcr/m/n/10 runs/ \T1/ptm/m/n/10 (via \T1/pcr/m/n/10 create_run_dir()\T1/ptm
-/m/n/10 ) and saves
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/pcr/m/n/10 config_used.yaml \T1/ptm/m/n/10 along with per-condition
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/ptm/m/n/10 out-puts such as \T1/pcr/m/n/10 confusion_matrix_<tag>.png\T1/pt
-m/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-\T1/ptm/m/n/10 and mis-clas-si-fi-ca-tion ex-am-ples in
- []
-
-
-Overfull \hbox (2.47142pt too wide) in paragraph at lines 160--168
- [][] 
- []
-
-<../report_handoff/plots+metrics/baseline/confusion_matrix_test.png, id=152, 36
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [2]
+<../report_handoff/plots+metrics/baseline/confusion_matrix_test.png, id=161, 36
 1.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png Graphi
 c file (type png)
 <use ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/confusion_mat
-rix_test.png  used on input line 176.
-(pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=154, 433.62pt 
+rix_test.png  used on input line 177.
+(pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
+<../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=163, 433.62pt 
 x 361.35pt>
 File: ../report_handoff/plots+metrics/baseline/roc_curve_test.png Graphic file 
 (type png)
 <use ../report_handoff/plots+metrics/baseline/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/roc_curve_tes
-t.png  used on input line 182.
-(pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
-<../report_handoff/plots+metrics/clean_model_comparison_table.png, id=155, 678.
-9365pt x 194.7275pt>
-File: ../report_handoff/plots+metrics/clean_model_comparison_table.png Graphic 
-file (type png)
-<use ../report_handoff/plots+metrics/clean_model_comparison_table.png>
-Package pdftex.def Info: ../report_handoff/plots+metrics/clean_model_comparison
-_table.png  used on input line 188.
-(pdftex.def)             Requested size: 239.39923pt x 68.66373pt.
-<../report_handoff/plots+metrics/cnn/train_history.png, id=157, 578.16pt x 433.
+t.png  used on input line 183.
+(pdftex.def)             Requested size: 211.67908pt x 176.4014pt.
+<../report_handoff/plots+metrics/cnn/train_history.png, id=165, 578.16pt x 433.
 62pt>
 File: ../report_handoff/plots+metrics/cnn/train_history.png Graphic file (type 
 png)
 <use ../report_handoff/plots+metrics/cnn/train_history.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/train_history.png 
- used on input line 200.
-(pdftex.def)             Requested size: 239.39923pt x 179.54533pt.
-[3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>]
-<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=176, 361.35p
+ used on input line 192.
+(pdftex.def)             Requested size: 211.67908pt x 158.75629pt.
+<../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=170, 361.35p
 t x 361.35pt>
 File: ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png Graphic fil
 e (type png)
 <use ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/confusion_matrix_t
-est.png  used on input line 212.
-(pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=177, 433.62pt x 361
+est.png  used on input line 201.
+(pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
+<../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=171, 433.62pt x 361
 .35pt>
 File: ../report_handoff/plots+metrics/cnn/roc_curve_test.png Graphic file (type
  png)
 <use ../report_handoff/plots+metrics/cnn/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/roc_curve_test.png
-  used on input line 218.
-(pdftex.def)             Requested size: 239.39923pt x 199.49849pt.
-
-Underfull \hbox (badness 5260) in paragraph at lines 246--247
-[]\T1/ptm/m/n/10 These con-di-tions cor-re-spond to the eval-u-a-tion tags
- []
-
-[4 <../report_handoff/plots+metrics/baseline/roc_curve_test.png> <../report_han
-doff/plots+metrics/clean_model_comparison_table.png> <../report_handoff/plots+m
-etrics/cnn/train_history.png> <../report_handoff/plots+metrics/cnn/confusion_ma
-trix_test.png> <../report_handoff/plots+metrics/cnn/roc_curve_test.png>]
-<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=194, 7
+  used on input line 207.
+(pdftex.def)             Requested size: 211.67908pt x 176.4014pt.
+ [3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png> <../re
+port_handoff/plots+metrics/baseline/roc_curve_test.png>]
+<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=192, 7
 15.0715pt x 310.761pt>
 File: ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/evaluate_metr
-ics_table.png  used on input line 254.
-(pdftex.def)             Requested size: 239.39923pt x 104.04037pt.
-<../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png, id=195, 3
-61.35pt x 361.35pt>
-File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png Graph
-ic file (type png)
-<use ../report_handoff/plots+metrics/evaluate/confusion_matrix_clean.png>
-Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_clean.png  used on input line 260.
-(pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=196
+ics_table.png  used on input line 241.
+(pdftex.def)             Requested size: 211.67908pt x 91.9914pt.
+<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=193
 , 361.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png Gr
 aphic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_jpeg_q40.png  used on input line 266.
-(pdftex.def)             Requested size: 239.39923pt x 239.4015pt.
-
-Underfull \hbox (badness 1558) in paragraph at lines 276--277
-\T1/ptm/m/n/10 lit-er-a-ture, where cross-generator gen-er-al-iza-tion and post
--
- []
-
-[5 <../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png> <../re
-port_handoff/plots+metrics/evaluate/confusion_matrix_clean.png> <../report_hand
-off/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png>] (./main.bbl
-Underfull \hbox (badness 7796) in paragraph at lines 106--109
-[]\T1/ptm/m/n/8 scikit-learn De-vel-op-ers, ``scikit-learn lo-gis-ti-cre-gres-s
-ion doc-u-men-
- []
-
-
-Underfull \hbox (badness 2126) in paragraph at lines 106--109
-\T1/ptm/m/n/8 ta-tion,'' []$https : / / scikit-[]learn . org / stable / modules
- / generated / sklearn . linear _
+rix_jpeg_q40.png  used on input line 247.
+(pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
+ [4 <../report_handoff/plots+metrics/cnn/train_history.png> <../report_handoff/
+plots+metrics/cnn/confusion_matrix_test.png> <../report_handoff/plots+metrics/c
+nn/roc_curve_test.png> <../report_handoff/plots+metrics/evaluate/evaluate_metri
+cs_table.png>] [5 <../report_handoff/plots+metrics/evaluate/confusion_matrix_jp
+eg_q40.png>] (./main.bbl
+Underfull \hbox (badness 5091) in paragraph at lines 106--109
+[]\T1/ptm/m/n/8 (+20) scikit-learn De-vel-op-ers, ``scikit-learn lo-gis-ti-cre-
+gres-sion doc-u-men-
  []
 
 )
@@ -673,22 +624,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./main.aux)
+[6
+
+
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B54B327A58D4DC4D2563434FC5D68ED5;4281.
+(rerunfilecheck)             Checksum: 5C4B376374438966471D6016DC86A121;4505.
  ) 
 Here is how much of TeX's memory you used:
- 11486 strings out of 474116
- 179974 string characters out of 5743681
+ 13681 strings out of 474116
+ 216660 string characters out of 5743681
  1951187 words of memory out of 5000000
- 33638 multiletter control sequences out of 15000+600000
- 671047 words of font info for 150 fonts, out of 8000000 for 9000
+ 35557 multiletter control sequences out of 15000+600000
+ 682511 words of font info for 309 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1409b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1001b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
@@ -699,10 +653,10 @@ live/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 464771 bytes).
+Output written on main.pdf (6 pages, 414712 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 52460 words of extra memory for PDF output out of 61914 (max. 10000000)
 
