@@ -79,12 +79,15 @@ L.~Chai, D.~Bau, S.~Lim, and P.~Isola, ``What makes fake images detectable?
 \BIBentrySTDinterwordspacing
 
 \bibitem{zhu2023genimage}
-``Genimage: A million-scale benchmark for detecting ai-generated image,''
-  \url{https://arxiv.org/abs/2306.08571}, 2023, accessed: 2026-03-26.
+M.~Zhu, H.~Chen, Q.~Yan, X.~Huang, G.~Lin, W.~Li, Z.~Tu, H.~Hu, J.~Hu, and
+  Y.~Wang, ``Genimage: A million-scale benchmark for detecting ai-generated
+  image,'' arXiv:2306.08571, 2023, \url{https://arxiv.org/abs/2306.08571}.
+  Accessed Mar.\ 26, 2026.
 
 \bibitem{ojha2023universal}
-``Towards universal fake image detectors that generalize across generative
-  models,'' \url{https://arxiv.org/abs/2302.10174}, 2023, accessed: 2026-03-26.
+U.~Ojha, Y.~Li, and Y.~J. Lee, ``Towards universal fake image detectors that
+  generalize across generative models,'' arXiv:2302.10174, 2023,
+  \url{https://arxiv.org/abs/2302.10174}. Accessed Mar.\ 26, 2026.
 
 \bibitem{he2016resnet}
 \BIBentryALTinterwordspacing
@@ -99,11 +102,13 @@ K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
   \url{https://pytorch.org/vision/stable/models.html}, accessed: 2026-03-26.
 
 \bibitem{frank2020leveraging}
-``Leveraging frequency analysis for deep fake image recognition,''
-  \url{https://arxiv.org/abs/2003.08685}, 2020, accessed: 2026-03-26.
+J.~Frank, T.~Eisenhofer, L.~Sch{\"o}nherr, A.~Fischer, D.~Kolossa, and T.~Holz,
+  ``Leveraging frequency analysis for deep fake image recognition,''
+  arXiv:2003.08685, 2020, \url{https://arxiv.org/abs/2003.08685}. Accessed
+  Mar.\ 26, 2026.
 
 \bibitem{sklearnlogreg}
-{scikit-learn Developers}, ``scikit-learn logisticregression documentation,''
+{scikit-learn Developers}, ``{scikit-learn}: {LogisticRegression} user guide,''
   \url{https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html},
   accessed: 2026-03-26.
 
