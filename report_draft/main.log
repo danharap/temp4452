@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  4 APR 2026 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.15)  6 APR 2026 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,47 +431,69 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
 ))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/sttools/flushend.sty
+Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip56
+\flushend@@lastskip@b=\skip57
+\flushend@@lastnode=\count299
+\var@@loop@iter=\count300
+\var@@temp@spread=\dimen193
+\var@@temp@a=\dimen194
+\var@@temp@loop=\dimen195
+\flushend@@page@rule=\dimen196
+\flushend@@varbox@lastpage=\box56
+\flushend@@varbox@a=\box57
+\flushend@@varbox@c=\box58
+\flushend@@tempbox@a=\box59
+\flushend@@tempbox@c=\box60
+\flushend@@floatbox=\box61
+\@viper=\box62
+\hold@viper=\box63
+\atColsBreak=\toks26
+\atColsEnd=\toks27
+\oldbreak@skip=\dimen197
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count301
+\l__pdf_internal_box=\box64
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
-\scratchdimen=\dimen193
-\scratchbox=\box57
-\nofMPsegments=\count301
-\nofMParguments=\count302
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count303
-\MPscratchDim=\dimen194
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count302
+\scratchdimen=\dimen198
+\scratchbox=\box65
+\nofMPsegments=\count303
+\nofMParguments=\count304
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen199
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -481,25 +503,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 46.
-Package microtype Info: Applying patch `item' on input line 46.
-Package microtype Info: Applying patch `toc' on input line 46.
-Package microtype Info: Applying patch `eqnum' on input line 46.
-Package microtype Info: Applying patch `footnote' on input line 46.
-Package microtype Info: Applying patch `verbatim' on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 47.
+Package microtype Info: Applying patch `item' on input line 47.
+Package microtype Info: Applying patch `toc' on input line 47.
+Package microtype Info: Applying patch `eqnum' on input line 47.
+Package microtype Info: Applying patch `footnote' on input line 47.
+Package microtype Info: Applying patch `verbatim' on input line 47.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 46.
+LaTeX Info: Redefining \showhyphens on input line 47.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -515,7 +537,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 107
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -524,7 +546,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 107
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -533,8 +555,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-9.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
+0.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -550,7 +572,7 @@ File: ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png Graphi
 c file (type png)
 <use ../report_handoff/plots+metrics/baseline/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/confusion_mat
-rix_test.png  used on input line 177.
+rix_test.png  used on input line 178.
 (pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
 <../report_handoff/plots+metrics/baseline/roc_curve_test.png, id=163, 433.62pt 
 x 361.35pt>
@@ -558,7 +580,7 @@ File: ../report_handoff/plots+metrics/baseline/roc_curve_test.png Graphic file
 (type png)
 <use ../report_handoff/plots+metrics/baseline/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/baseline/roc_curve_tes
-t.png  used on input line 183.
+t.png  used on input line 184.
 (pdftex.def)             Requested size: 211.67908pt x 176.4014pt.
 <../report_handoff/plots+metrics/cnn/train_history.png, id=165, 578.16pt x 433.
 62pt>
@@ -566,7 +588,7 @@ File: ../report_handoff/plots+metrics/cnn/train_history.png Graphic file (type
 png)
 <use ../report_handoff/plots+metrics/cnn/train_history.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/train_history.png 
- used on input line 192.
+ used on input line 193.
 (pdftex.def)             Requested size: 211.67908pt x 158.75629pt.
 <../report_handoff/plots+metrics/cnn/confusion_matrix_test.png, id=170, 361.35p
 t x 361.35pt>
@@ -574,7 +596,7 @@ File: ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png Graphic fil
 e (type png)
 <use ../report_handoff/plots+metrics/cnn/confusion_matrix_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/confusion_matrix_t
-est.png  used on input line 201.
+est.png  used on input line 202.
 (pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
 <../report_handoff/plots+metrics/cnn/roc_curve_test.png, id=171, 433.62pt x 361
 .35pt>
@@ -582,34 +604,34 @@ File: ../report_handoff/plots+metrics/cnn/roc_curve_test.png Graphic file (type
  png)
 <use ../report_handoff/plots+metrics/cnn/roc_curve_test.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/cnn/roc_curve_test.png
-  used on input line 207.
+  used on input line 208.
 (pdftex.def)             Requested size: 211.67908pt x 176.4014pt.
  [3 <../report_handoff/plots+metrics/baseline/confusion_matrix_test.png> <../re
 port_handoff/plots+metrics/baseline/roc_curve_test.png>]
-<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=192, 7
+<../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png, id=193, 7
 15.0715pt x 310.761pt>
 File: ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png Graph
 ic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/evaluate_metrics_table.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/evaluate_metr
-ics_table.png  used on input line 241.
+ics_table.png  used on input line 242.
 (pdftex.def)             Requested size: 211.67908pt x 91.9914pt.
-<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=193
+<../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png, id=194
 , 361.35pt x 361.35pt>
 File: ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png Gr
 aphic file (type png)
 <use ../report_handoff/plots+metrics/evaluate/confusion_matrix_jpeg_q40.png>
 Package pdftex.def Info: ../report_handoff/plots+metrics/evaluate/confusion_mat
-rix_jpeg_q40.png  used on input line 247.
+rix_jpeg_q40.png  used on input line 248.
 (pdftex.def)             Requested size: 211.67908pt x 211.67838pt.
  [4 <../report_handoff/plots+metrics/cnn/train_history.png> <../report_handoff/
 plots+metrics/cnn/confusion_matrix_test.png> <../report_handoff/plots+metrics/c
 nn/roc_curve_test.png> <../report_handoff/plots+metrics/evaluate/evaluate_metri
 cs_table.png>] [5 <../report_handoff/plots+metrics/evaluate/confusion_matrix_jp
 eg_q40.png>] (./main.bbl
-Underfull \hbox (badness 5091) in paragraph at lines 111--114
-[]\T1/ptm/m/n/8 (+20) scikit-learn De-vel-op-ers, ``scikit-learn lo-gis-ti-cre-
-gres-sion doc-u-men-
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+[]$\T1/ptm/m/n/8 (+20) https : / / scikit-[]learn . org / stable / modules / ge
+nerated / sklearn . linear _ model .
  []
 
 )
@@ -624,8 +646,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
+[leftcolumn badness]: 1000000 on 30.15001pt
+[rightcolumn badness]: 1000000 on 30.15001pt
+[leftcolumn badness]: 1000000 on 30.15001pt
+[rightcolumn badness]: 1000000 on 30.15001pt
+[leftcolumn badness]: 1000000 on 30.15001pt
+[rightcolumn badness]: 1000000 on 30.15001pt
+[leftcolumn badness]: 1000000 on 30.15001pt
+[rightcolumn badness]: 1000000 on 30.15001pt
+- LAST -
+Extra skip:5.84999pt
+Left:251.84999pt/1.73193pt
+Right:246.0pt/1.73193pt
+Split: 251.42499pt
+Output:251.42499pt
+Pageshrink: 0.0pt
+Pagestretch: 0.0pt
+@colht:672.0pt
+FLUSHEND [output]: 251.42499pt
+FLUSHEND [leftcolumn badness]: 10
+FUSHEND [rightcolumn badness]: 371
 [6
-
 
 ] (./main.aux)
  ***********
@@ -636,13 +677,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5C4B376374438966471D6016DC86A121;4505.
  ) 
 Here is how much of TeX's memory you used:
- 13684 strings out of 474116
- 216687 string characters out of 5743681
- 1951187 words of memory out of 5000000
- 35557 multiletter control sequences out of 15000+600000
- 682641 words of font info for 311 fonts, out of 8000000 for 9000
+ 13797 strings out of 474116
+ 218927 string characters out of 5743681
+ 1953187 words of memory out of 5000000
+ 35666 multiletter control sequences out of 15000+600000
+ 682632 words of font info for 311 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1001b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1001b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
@@ -653,7 +694,7 @@ live/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2024/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 415248 bytes).
+Output written on main.pdf (6 pages, 415711 bytes).
 PDF statistics:
  300 PDF objects out of 1000 (max. 8388607)
  255 compressed objects within 3 object streams
